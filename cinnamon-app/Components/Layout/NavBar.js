@@ -40,6 +40,7 @@ function NavBar() {
               stickyClass ? "text-black" : ""
             }`}
           >
+            {/* hyb */}
             <Link className="hover:text-primary" href="/">
               Projects
             </Link>
