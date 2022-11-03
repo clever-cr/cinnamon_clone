@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("http://fonts.cdnfonts.com/css/mont%27");
+
+html,
+body {
+  @apply overflow-x-hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+.input:focus-within ~ label {
+  @apply transform scale-75 -translate-y-6 -left-3 text-primary;
+}
+@font-face {
+  font-family: "Mont";
+  src: local("Mont"), url("/fonts/MontRegular.woff2") format("woff2"),
+    url("/fonts/MontRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontSemiBold";
+  src: local("MontBold"), url("/fonts/MontSemiBold.woff2") format("woff2"),
+    url("/fonts/MontSemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontBold";
+  src: local("MontHeavy"), url("/fonts/MontBold.woff2") format("woff2"),
+    url("/fonts/MontBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontHeavy";
+  src: local("MontHeavy"), url("/fonts/MontHeavy.woff2") format("woff2"),
+    url("/fonts/MontHeavy.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
